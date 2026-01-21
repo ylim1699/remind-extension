@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "my-extension",
+    "version": "1.0.0",
+    "description": "This is a web extension that changes the background color of your browser",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "scripting",
+        "tabs",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "icons": {
+        "12": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}

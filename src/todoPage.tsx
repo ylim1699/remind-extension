@@ -1,7 +1,10 @@
 import { useState } from "react";
 
 function TodoPage() {
-  const onclick = async () => {
+  const [btnText, setBtnText] = useState("click me")
+  
+  const clicked = async () => {
+    setBtnText("You clicked the button!")
     const [tabs] = await chrome.tabs.query({ active: true });
     chrome.scripting.executeScript({
       target: { tabId: tabs.id! },
@@ -13,9 +16,9 @@ function TodoPage() {
 
   return (
     <main>
-      <button onClick={() => onclick()}>Click me</button>
+      <button onClick={() => clicked()}>{btnText}</button>
     </main>
   );
 }
 
-export default TodoPage();
+export default TodoPage;

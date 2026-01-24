@@ -1,4 +1,4 @@
-import { useState } from 'react' 
+import { useState } from 'react';
 // useState is how you store values or data, and you use this instead of let color="white".
 // How? You import it like above and then do: const[color, setColor] = useState('white');
 // you can also keep the initial empty to map new data from rest API.
@@ -6,11 +6,15 @@ import { useState } from 'react'
 
 
 function Header() {
+
+    const [headerText, setheaderText] = useState("");
+    setheaderText("Hello World!");
+
     return (
         <header>
-            <p>Hello World!</p>
+            <p>{headerText}</p>
         </header>
     )
 }
 
-export default Header
+export default Header;

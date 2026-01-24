@@ -7,12 +7,10 @@ import { useState } from 'react';
 
 function Header() {
 
-    const [headerText, setheaderText] = useState("");
-    setheaderText("Hello World!");
 
     return (
         <header>
-            <p>{headerText}</p>
+            <p>Hello World</p>
         </header>
     )
 }

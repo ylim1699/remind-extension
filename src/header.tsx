@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <p>Hello World</p>
+      <h1>Reminder Web Extension</h1>
     </header>
   );
 }

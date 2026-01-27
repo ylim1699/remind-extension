@@ -1,12 +1,12 @@
 import './App.css';
 import Header from './header';
-import TodoPage from './todoPage';
+import Task from './task';
 
 function App() {
   return (
     <>
       <Header />
-      <TodoPage />
+      <Task />
     </>
   );
 }

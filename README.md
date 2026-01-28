@@ -1,73 +1,49 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Title (Update)
 
-Currently, two official plugins are available:
+Add a description of your project here.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instructions for Build and Use
 
-## React Compiler
+Steps to build and/or run the software:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. First, clone this repository and download it into your computer and in the terminal, do npm i to install all the dependencies.
+2. Go to chrome browser(only supported in chrome) and press the extension icon on the top right.
+3. Then click manage extensions on the bottom of the popup page from extension icon.
+4. On the top right, click the button that says Developer mode.
+5. Next press load unpacked on the top left corner and select the dist folder of this project that you downloaded.
+6. Now you can go to another tab and press the extensions icon and if you press the new my-extension icon, you will get the extension tab pop-up.
+7. Anytime you need a reminder or need to write a note about something, you can now open up this tab, open it up, and add or delete them. 
 
-## Expanding the ESLint configuration
+Instructions for using the software:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Using this software is very simple because it's basically a todo app but in a web extention
+2. I made it as a web extension because I never made todo app before because I didn't see a use for it. I thought it would be more efficient as a web browser that you can open and close in any tab.
+3. Anytime you need a reminder or need to write a note about something, you can now open up this tab by clicking my-extesion icon.
+4. Type in the input box and click add to open it up, and X to delete them. 
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Development Environment
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+To recreate the development environment, you need the following software and/or libraries with the specified versions:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+* You need node, npm, vite, react, and typescript to create this app. 
+* I'm not exactly sure what the sepcified version you need but it should work in the newest version.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+## Useful Websites to Learn More
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+I found these websites useful in developing this software:
+
+* [TypeScripot- Glossary MDN] (https://developer.mozilla.org/en-US/docs/Glossary/TypeScript)
+* [Manifest file format] (https://developer.chrome.com/docs/extensions/reference/manifest)
+* [W3Schools Online Web Tutoring] (https://www.w3schools.com/)
+* LLM (gemini)
+
+## Future Work
+
+The following items I plan to fix, improve, and/or add to this project in the future:
+
+* [ ] I want to fix the UI/UX of this app first because it looks pretty plain. 
+* [ ] I'm also thinking about adding a new feature of timer, so that you can set a time for things and it reminds you when the time runs out.
+* [ ] I might also add a feature that allows the app to make your browser change color so that you can have a night-mode for any website (I'll have to see how realistic this is).

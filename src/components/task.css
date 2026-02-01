@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.extension-container,
+.task-input,
+.add-button,
+.task-list,
+.task-item {
+  font-family: 'SN Pro', sans-serif;
+  font-optical-sizing: auto;
+}
+
+.extension-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-input {
+  width: 180px;
+  height: 30px;
+  border-radius: 8px;
+  margin-right: 10px;
+  font-size: 1rem;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.task-input:hover {
+  background-color: rgb(219, 219, 219);
+  outline: none;
+}
+
+.task-input:focus {
+  outline: none;
+}
+
+.add-button {
+  width: 55px;
+  height: 40px;
+
+  color: white;
+  background-color: rgb(97, 190, 97);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in-out;
+}
+
+.add-button:hover {
+  cursor: pointer;
+  background-color: rgb(76, 163, 76);
+  transform: scale(1.05);
+}
+
+.task-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-list button {
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(243, 69, 69);
+  color: white;
+  box-shadow: 1px 1px 5px rgb(116, 116, 116);
+  transition: transform 0.1s ease-in-out;
+}
+
+.task-list button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.task-item {
+  display: flex;
+  gap: 10px;
+  padding: 25px;
+  border-bottom: 1px solid rgb(196, 196, 196);
+}

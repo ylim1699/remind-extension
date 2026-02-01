@@ -1,6 +1,6 @@
 import './App.css';
-import Header from './header';
-import Task from './task';
+import Header from './components/header';
+import Task from './components/task';
 
 function App() {
   return (

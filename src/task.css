@@ -1,0 +1,15 @@
+.extension-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.task-input {
+    border-radius: 8px;
+}
+
+.add-button  {
+    border-radius: 12px;
+    background-color: rgb(9, 189, 9);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
